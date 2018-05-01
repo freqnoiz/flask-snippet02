@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Flask Login</title>
+<link rel="stylesheet" href="/static/dist/css/kube.css" type="text/css">
+<style type="text/css">
+div.a {
+	text-align: center;
+}
+</style>
+</head>
+<body>
+	<div style="width: 800px; margin: 0 auto;" class="a"></div>
+	<div style="width: 500px; margin: 0 auto;">
+		<form action="/login" method="POST">
+			<fieldset>
+				<legend>Login data</legend>
+				<div class="form-item">
+					<label>Username</label> <input type="user" name="user">
+				</div>
+				<div class="form-item">
+					<label>Password</label> <input type="password" name="password">
+				</div>
+				<div class="form-item">
+					<input type="submit" value="Log in">
+				</div>
+			</fieldset>
+		</form>
+	</div>
+</body>
+</html>
